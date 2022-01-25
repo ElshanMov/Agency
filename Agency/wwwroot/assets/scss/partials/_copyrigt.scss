@@ -1,0 +1,19 @@
+#copyright {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .container {
+    .row {
+      a {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .btn {
+        border-radius: 100% !important;
+      }
+      .lastdiv {
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+}

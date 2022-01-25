@@ -1,0 +1,302 @@
+﻿@model HomeViewModel
+<main>
+    <section id="services">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="repeat-header">
+                        <h1>SERVICES</h1>
+                        <p><i>Lorem ipsum dolor sit amet consectetur</i></p>
+                    </div>
+                </div>
+                @foreach (var item in Model.Services)
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                        <div class="card-body">
+                            <div class="icon-body">
+                               @Html.Raw(item.Icon)
+                            </div>
+                            <h1>@item.ServiceName</h1>
+                            <p>
+                                @item.ServiceDesc
+                            </p>
+                        </div>
+                    </div>
+                }             
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="repeat-header mb-5">
+                    <h1>PORTFOLIO</h1>
+                    <p><i>Lorem ipsum dolor sit amet consectetur</i></p>
+                </div>
+            </div>
+            <div class="row text-center">
+                @foreach (var item in Model.Portfolios)
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="portfolio-card">
+                            <div class="port-img">
+                                <img class="img-fluid"
+                                     src="~/uploads/portfolios/@item.Image"
+                                     alt="smartclock" />
+                                <div class="hvr-img hover-btn"
+                                     data-bs-toggle="modal"
+                                     @*data-bs-target="#portfolioModal"*@
+                                     data-id="@item.Id">
+                                    
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <h1>@item.ImageTitle</h1>
+                            <p><i>@item.ImageDesc</i></p>
+
+                            <!-- Modal -->
+                            <div class="modal fade"
+                                 id="portfolioModal"
+                                 tabindex="-1"
+                                 aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                @*<div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="portfolio-card">
+                <div class="port-img">
+                    <img class="img-fluid"
+                         src="assets/image/portfolio-smartclock.jpg"
+                         alt="smartclock" />
+                    <div class="hvr-img">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <h1>Threads</h1>
+                <p><i>Illustration</i></p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="portfolio-card">
+                <div class="port-img">
+                    <img class="img-fluid"
+                         src="assets/image/portfolio-smartclock.jpg"
+                         alt="smartclock" />
+                    <div class="hvr-img">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <h1>Threads</h1>
+                <p><i>Illustration</i></p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="portfolio-card">
+                <div class="port-img">
+                    <img class="img-fluid"
+                         src="assets/image/portfolio-smartclock.jpg"
+                         alt="smartclock" />
+                    <div class="hvr-img">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <h1>Threads</h1>
+                <p><i>Illustration</i></p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="portfolio-card">
+                <div class="port-img">
+                    <img class="img-fluid"
+                         src="assets/image/portfolio-smartclock.jpg"
+                         alt="smartclock" />
+                    <div class="hvr-img">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <h1>Threads</h1>
+                <p><i>Illustration</i></p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="portfolio-card">
+                <div class="port-img">
+                    <img class="img-fluid"
+                         src="assets/image/portfolio-smartclock.jpg"
+                         alt="smartclock" />
+                    <div class="hvr-img">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <h1>Threads</h1>
+                <p><i>Illustration</i></p>
+            </div>
+        </div>*@
+            </div>
+        </div>
+    </section>
+    <section id="our-amazing-team">
+        <div class="container text-center">
+            <div class="row text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="repeat-header mb-5">
+                        <h1>OUR AMAZING TEAM</h1>
+                        <p><i>Lorem ipsum dolor sit amet consectetur</i></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-body">
+                        <div class="team-img">
+                            <img class="img-fluid"
+                                 src="~/assets/image/designer.jpg"
+                                 alt="designer" />
+                        </div>
+                        <h3>Parveen Anand</h3>
+                        <p>Lead Designer</p>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-body">
+                        <div class="team-img">
+                            <img class="img-fluid"
+                                 src="~/assets/image/designer.jpg"
+                                 alt="designer" />
+                        </div>
+                        <h3>Parveen Anand</h3>
+                        <p>Lead Designer</p>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-body">
+                        <div class="team-img">
+                            <img class="img-fluid"
+                                 src="~/assets/image/designer.jpg"
+                                 alt="designer" />
+                        </div>
+                        <h3>Parveen Anand</h3>
+                        <p>Lead Designer</p>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-social bg-dark">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 bottom-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus, voluptates. Suscipit nisi repudiandae, illo ad, odit
+                        neque aliquid natus illum pariatur, quibusdam quia earum
+                        maiores!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="supporter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="supporter-img">
+                        <img class="img-fluid"
+                             src="~/assets/image/microsoft.svg"
+                             alt="microsoft" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="supporter-img">
+                        <img class="img-fluid"
+                             src="~/assets/image/google.svg"
+                             alt="google" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="supporter-img">
+                        <img class="img-fluid"
+                             src="~/assets/image/facebook.svg"
+                             alt="facebook" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="supporter-img">
+                        <img class="img-fluid" src="~/assets/image/ibm.svg" alt="ibm" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="repeat-header mb-5">
+                        <h1 style="color: white">CONTACT US</h1>
+                        <p><i>Lorem ipsum dolor sit amet consectetur</i></p>
+                    </div>
+                </div>
+                <form id="contactForm">
+                    <div class="row text-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Your Name*" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Your Name*" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Your Name*" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control contacttext"
+                                          cols="30"
+                                          rows="10"
+                                          placeholder="Text write!"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <a href="#" class="btn">SEND MESSAGE</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

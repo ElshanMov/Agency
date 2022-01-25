@@ -1,0 +1,74 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <form method="post" asp-action="create" enctype="multipart/form-data">
+                <div class="form-group mb-3">
+                    <label asp-for="Title" class="form-label">Title</label>
+                    <input asp-for="Title" class="form-control">
+                    <span class="text-danger" asp-validation-for="Title"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="SubTitle" class="form-label">Subtitle</label>
+                    <input asp-for="SubTitle" class="form-control">
+                    <span class="text-danger" asp-validation-for="SubTitle"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="ImageTitle" class="form-label">ImageTitle</label>
+                    <input asp-for="ImageTitle" class="form-control">
+                    <span class="text-danger" asp-validation-for="ImageTitle"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="ImageDesc" class="form-label">Image Desc</label>
+                    <input asp-for="ImageDesc" class="form-control">
+                    <span class="text-danger" asp-validation-for="ImageDesc"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="PorfolioName" class="form-label">Portfolio Name</label>
+                    <input asp-for="PorfolioName" class="form-control">
+                    <span class="text-danger" asp-validation-for="PorfolioName"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="PortfolioDesc" class="form-label">Portfolio Desc</label>
+                    <input asp-for="PortfolioDesc" class="form-control">
+                    <span class="text-danger" asp-validation-for="PortfolioDesc"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="PortfolioSubTitle" class="form-label">Portfolio Sub Title</label>
+                    <input asp-for="PortfolioSubTitle" class="form-control">
+                    <span class="text-danger" asp-validation-for="PortfolioSubTitle"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="Client" class="form-label">Client</label>
+                    <input asp-for="Client" class="form-control">
+                    <span class="text-danger" asp-validation-for="Client"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="Category" class="form-label">Category</label>
+                    <input asp-for="Category" class="form-control">
+                    <span class="text-danger" asp-validation-for="Category"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="BtnText" class="form-label">Button Text</label>
+                    <input asp-for="BtnText" class="form-control">
+                    <span class="text-danger" asp-validation-for="BtnText"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="ImageFile" class="form-label">Image</label>
+                    <input asp-for="ImageFile" class="form-control">
+                    <span class="text-danger" asp-validation-for="ImageFile"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

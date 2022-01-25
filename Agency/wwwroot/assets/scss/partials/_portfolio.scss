@@ -1,0 +1,46 @@
+#portfolio {
+  background-color: #f2f2f2;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .container {
+    .row {
+      .portfolio-card {
+        .port-img {
+          margin-bottom: 1rem;
+          position: relative;
+          .hvr-img {
+            position: absolute;
+            background-color: #ffc800;
+            display: flex;
+            height: 100%;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            i {
+              color: white;
+              font-size: 4rem !important;
+            }
+          }
+          &:hover {
+            .hvr-img {
+              opacity: 0.9;
+            }
+          }
+        }
+        h1 {
+          font-size: 2rem;
+          font-weight: bolder;
+        }
+        p {
+          font-size: 1.25rem;
+          color: #6c757d;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.repeat-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.repeat-header h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.repeat-header p {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+@media (max-width: 991px) {
+  .div {
+    margin-bottom: 2rem !important;
+  }
+  .hero-header i {
+    font-size: 2rem !important;
+  }
+  .hero-header h1 {
+    font-size: 3rem !important;
+  }
+  #our-amazing-team .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #our-amazing-team .container .row .team-body {
+    margin-bottom: 2rem;
+  }
+  #our-amazing-team .container .row .bottom-text {
+    padding: 3rem !important;
+  }
+  #supporter .container .row div {
+    margin-bottom: 1rem !important;
+  }
+  #contact #contactForm .contacttext {
+    height: 68px;
+  }
+  #copyright .container .row {
+    text-align: center !important;
+  }
+  #copyright .container .row div {
+    margin-bottom: 1rem;
+  }
+  #copyright .container .row .lastdiv {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .repeat-header {
+    margin-bottom: 2rem;
+  }
+  .repeat-header h1 {
+    font-size: 2rem;
+  }
+  .repeat-header p {
+    font-size: 1rem;
+  }
+}
+
+header {
+  height: 800px;
+}
+
+header .img {
+  background-image: url("/assets/image/header-bg.jpg");
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 800px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+header .img .container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 800px;
+}
+
+header .img .container .navbar .container-fluid .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+header .img .container .navbar .container-fluid .navbar-collapse ul {
+  font-size: 1.25rem;
+}
+
+header .img .container .navbar .container-fluid .navbar-collapse ul li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+header .img .container .navbar .container-fluid .navbar-collapse ul li a:hover {
+  color: #ffc800 !important;
+}
+
+header .img .container .row .hero-header i {
+  font-size: 3rem;
+}
+
+header .img .container .row .hero-header h1 {
+  font-size: 5.25rem;
+  margin-bottom: 2rem;
+}
+
+header .img .container .row .hero-header a {
+  font-size: 1.25rem;
+  background-color: #ffc800;
+  padding: 1.25rem 2.75rem;
+  font-weight: bolder;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .img .container .row .hero-header a:hover {
+  background-color: #cca413;
+}
+
+#services {
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#services .card-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#services .card-body .icon-body i {
+  color: white;
+  font-size: 4.5rem;
+  background-color: #ffc800;
+  padding: 2rem;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+
+#services .card-body h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+}
+
+#services .card-body p {
+  font-size: 1.05rem;
+  color: #6c757d;
+}
+
+#portfolio {
+  background-color: #f2f2f2;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#portfolio .container .row .portfolio-card .port-img {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+#portfolio .container .row .portfolio-card .port-img .hvr-img {
+  position: absolute;
+  background-color: #ffc800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#portfolio .container .row .portfolio-card .port-img .hvr-img i {
+  color: white;
+  font-size: 4rem !important;
+}
+
+#portfolio .container .row .portfolio-card .port-img:hover .hvr-img {
+  opacity: 0.9;
+}
+
+#portfolio .container .row .portfolio-card h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#portfolio .container .row .portfolio-card p {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+#our-amazing-team {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#our-amazing-team .container .row p {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+#our-amazing-team .container .row .team-body .team-img {
+  margin-bottom: 1rem;
+}
+
+#our-amazing-team .container .row .team-body .team-img img {
+  height: 14rem;
+  width: 14rem;
+  border: 6px solid #a5b0b8;
+  border-radius: 100% !important;
+}
+
+#our-amazing-team .container .row .team-body h3 {
+  font-weight: bolder;
+  padding-bottom: 0.5rem;
+}
+
+#our-amazing-team .container .row .team-body .btn {
+  border-radius: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+#our-amazing-team .container .row .team-body .btn:hover {
+  background-color: black !important;
+}
+
+#our-amazing-team .container .row .bottom-text {
+  padding-top: 3rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+#supporter {
+  background-color: #f2f2f2;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#supporter .container .row .supporter-img img {
+  display: block;
+  height: 4rem;
+}
+
+#supporter .container .row .supporter-img .img-fluid {
+  margin: 0 !important;
+}
+
+#copyright {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#copyright .container .row a {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#copyright .container .row .btn {
+  border-radius: 100% !important;
+}
+
+#copyright .container .row .lastdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #212529 !important;
+  background-image: url("/assets/image/map-image.png");
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 700px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+#contact #contactForm .row .form-group {
+  margin-bottom: 2.5rem !important;
+}
+
+#contact #contactForm .row input {
+  height: 3.75rem !important;
+}
+
+#contact #contactForm .row .btn {
+  padding: 1.5rem 2rem;
+  background-color: #ffc800;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */

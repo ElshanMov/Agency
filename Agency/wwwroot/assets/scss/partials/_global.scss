@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.repeat-header {
+  text-align: center;
+  h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.25rem;
+    color: #6c757d;
+  }
+  margin-bottom: 2rem;
+}
+//Responsiv-design
+@media (max-width: "991px") {
+  //header
+  .div {
+    margin-bottom: 2rem !important;
+  }
+  .hero-header {
+    i {
+      font-size: 2rem !important;
+    }
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+  //our-amazing-team
+  #our-amazing-team {
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        .team-body {
+          margin-bottom: 2rem;
+        }
+        .bottom-text {
+          padding: 3rem !important;
+        }
+      }
+    }
+  }
+  //supporter
+  #supporter {
+    .container {
+      .row {
+        div {
+          margin-bottom: 1rem !important;
+        }
+      }
+    }
+  }
+  //contact
+  #contact {
+    #contactForm {
+      .contacttext {
+        height: 68px;
+      }
+    }
+  }
+
+  //copyright
+  #copyright {
+    .container {
+      .row {
+        div {
+          margin-bottom: 1rem;
+        }
+        text-align: center !important;
+        .lastdiv {
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+
+  //#
+  .repeat-header {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    margin-bottom: 2rem;
+  }
+}

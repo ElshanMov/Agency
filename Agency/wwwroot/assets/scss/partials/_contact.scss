@@ -1,0 +1,29 @@
+#contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #212529 !important;
+  background-image: url("/assets/image/map-image.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  #contactForm {
+    .row {
+      .form-group {
+        margin-bottom: 2.5rem !important;
+      }
+      input {
+        height: 3.75rem !important;
+      }
+
+      .btn {
+        padding: 1.5rem 2rem;
+
+        background-color: #ffc800;
+        font-size: 1.25rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+﻿@model Portfolio
+<div class="modal-body">
+    <i class="fas fa-times d-flex justify-content-end"
+       data-bs-dismiss="modal"></i>
+</div>
+<div class="container">
+    <h1>@Model.PorfolioName</h1>
+    <p>@Model.SubTitle</p>
+    <img class="img-fluid"
+         src="~/uploads/portfolios/@Model.Image"
+         alt="smartclock" />
+    <div class="modal-text">
+        <p style="color: black">
+            @Model.PortfolioDesc
+        </p>
+        <p style="color: black">
+            <strong>Client:</strong>@Model.Client
+        </p>
+        <p style="color: black">
+            <strong>Category:</strong>@Model.Category
+        </p>
+    </div>
+
+    <div class="modal-footer justify-content-center">
+        <button type="button"
+                class="btn btn-warning text-white p-3"
+                data-bs-dismiss="modal">
+            <i class="fas fa-times">@Model.BtnText</i>
+        </button>
+    </div>
+</div>

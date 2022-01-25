@@ -1,0 +1,43 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <form method="post" asp-action="edit">
+                <div class="form-group mb-3">
+                    <label asp-for="Title" class="form-label">Title</label>
+                    <input asp-for="Title" class="form-control">
+                    <span class="text-danger" asp-validation-for="Title"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="SubTitle" class="form-label">Subtitle</label>
+                    <input asp-for="SubTitle" class="form-control">
+                    <span class="text-danger" asp-validation-for="SubTitle"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="Icon" class="form-label">Icon</label>
+                    <input asp-for="Icon" class="form-control">
+                    <span class="text-danger" asp-validation-for="Icon"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="ServiceName" class="form-label">Service Name</label>
+                    <input asp-for="ServiceName" class="form-control">
+                    <span class="text-danger" asp-validation-for="ServiceName"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label asp-for="ServiceDesc" class="form-label">Service Description</label>
+                    <input asp-for="ServiceDesc" class="form-control">
+                    <span class="text-danger" asp-validation-for="ServiceDesc"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

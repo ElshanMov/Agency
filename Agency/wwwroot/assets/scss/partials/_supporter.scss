@@ -1,0 +1,16 @@
+#supporter {
+  background-color: #f2f2f2;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .container .row {
+    .supporter-img {
+      img {
+        display: block;
+        height: 4rem;
+      }
+      .img-fluid {
+        margin: 0 !important;
+      }
+    }
+  }
+}
